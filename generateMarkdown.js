@@ -28,7 +28,7 @@ function renderLicenseBadge(license) {
             var readmeBadge = '';
             break;
     }
-    
+
     return readmeBadge;
 }
 
@@ -41,9 +41,9 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {
 
     if(license === "None") {
-        var readmeLicense = '';
+        var readmeLicense = '### This project is unlicensed.';
     } else {
-        var readmeLicense = `## This project is licensed under the terms of the **${license} License**.`;
+        var readmeLicense = `### This project is licensed under the terms of the **${license} License**.`;
     }
 
     // Display the license content
@@ -83,11 +83,13 @@ function generateMarkdown(data) {
     var readmeString = `# ${data.title} ${readmeBadge} \n`;
     readmeString += `${data.description} \n \ \n`;
     readmeString += `## Table of Contents \n \ \n`; 
+    readmeString += '[Installation](#installation) \n[Usage](#usage) \n[Credits](#credits) \n[Tests](#tests) \n[Questions](#questions) \n [License](#license) \n  \ \n';
     readmeString += `## Installation \n \ \n`; 
     readmeString += `## Usage \n \ \n`; 
     readmeString += `## Credits \n \ \n`; 
     readmeString += `## Tests \n \ \n`; 
     readmeString += `## Questions \n \ \n`; 
+    readmeString += `## License \n \ \n`;
     readmeString += `${readmeLicense}\n`; 
 
     return readmeString;
