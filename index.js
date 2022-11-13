@@ -5,13 +5,18 @@ const gmd = require('./generateMarkdown.js');
 inquirer.prompt([
     {
         type: 'input',
-        message: 'What is the title of your project?',
+        message: 'Project Title:',
         name: 'title'
+    },
+    {
+        type: 'input',
+        message: 'Description:',
+        name: 'description'
     },
     {
         type: 'list',
         message: 'Choose a license:',
-        choices: ["MIT", "Stuffed Crust", "Pan", "none"],
+        choices: ["GNU GPLv2", "GNU GPLv3", "MIT", "Open Software 3.0", "None"],
         name: 'license'
     }
 ]).then((response) =>{

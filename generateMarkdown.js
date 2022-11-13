@@ -10,7 +10,7 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
 
-    if(license === "none") {
+    if(license === "None") {
         var readmeLicense = '';
     } else {
         var readmeLicense = `## This project is licensed under the terms of the ${license} License.`;
@@ -22,7 +22,17 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   
     const readmeLicense = renderLicenseSection(data.license);
-    return `# ${data.title} \n\n${readmeLicense}`;
+    return `
+        # ${data.title} \n\n
+        ## ${data.description} \n\n
+        ## Table of Contents \n\n 
+        ## Installation \n\n
+        ## Usage \n\n 
+        ## Credits \n\n
+        ## Tests \n\n 
+        ## Questions \n\n
+        ${readmeLicense}
+    `;
 }
 
 module.exports = { generateMarkdown };
