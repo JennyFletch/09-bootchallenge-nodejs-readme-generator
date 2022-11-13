@@ -6,17 +6,15 @@ inquirer.prompt([
     {
         type: 'input',
         message: 'What is the title of your project?',
-        name: 'title',
+        name: 'title'
     },
+    {
+        type: 'list',
+        message: 'Choose a license:',
+        choices: ["MIT", "Stuffed Crust", "Pan", "none"],
+        name: 'license'
+    }
 ]).then((response) =>{
-
-    /* .then((response) =>
-    response.confirm === response.password
-      ? console.log('Success!')
-      : console.log('You forgot your password already?!') */
-    
-    // const {enterName} = response;
-    // const readmeMD = `# This is ${enterName}'s README file.`;
 
     const readmeMD = gmd.generateMarkdown(response);
 
