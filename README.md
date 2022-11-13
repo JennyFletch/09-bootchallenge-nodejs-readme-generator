@@ -1,1 +1,2 @@
-# This is Jen's README file.
+# Jen's Cool Project
+
