@@ -20,8 +20,8 @@ inquirer.prompt([
 
     const readmeMD = gmd.generateMarkdown(response);
 
-    fs.writeFile('README.md', `${readmeMD}`, (err)=>{
-        return console.log("done!");
+    fs.writeFile('README.md', readmeMD, (err)=>{
+        err ? console.error(err) : console.log('README file has been created!');
     } );
 
 })
