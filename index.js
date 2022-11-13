@@ -2,6 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const gmd = require('./generateMarkdown.js');
 
+
 inquirer.prompt([
     {
         type: 'input',
@@ -16,7 +17,7 @@ inquirer.prompt([
     {
         type: 'list',
         message: 'Choose a license:',
-        choices: ["GNU GPLv2", "GNU GPLv3", "MIT", "Open Software 3.0", "None"],
+        choices: ["CCO Attribution 4.0 Intl", "GNU GPLv2", "GNU GPLv3", "MIT", "None"],
         name: 'license'
     }
 ]).then((response) =>{

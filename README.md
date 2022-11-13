@@ -1,17 +1,16 @@
-# README Generator 
-
-## This builds a readme 
-
+# none  
+and more info 
+  
 ## Table of Contents 
-
-## Installation n
+  
+## Installation 
+  
 ## Usage 
-
+  
 ## Credits 
-
+  
 ## Tests 
-
+  
 ## Questions 
-
-## This project is licensed under the terms of the GNU GPLv2 License. 
+  
 
