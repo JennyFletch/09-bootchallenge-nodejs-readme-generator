@@ -1,27 +1,17 @@
+# README Generator 
 
-        # Sample README Generator 
+## This builds a readme 
 
+## Table of Contents 
 
-        ## Testing out the readme's layout in GitHub 
+## Installation n
+## Usage 
 
+## Credits 
 
-        ## Table of Contents 
+## Tests 
 
- 
-        ## Installation 
+## Questions 
 
+## This project is licensed under the terms of the GNU GPLv2 License. 
 
-        ## Usage 
-
- 
-        ## Credits 
-
-
-        ## Tests 
-
- 
-        ## Questions 
-
-
-        ## This project is licensed under the terms of the GNU GPLv3 License.
-    

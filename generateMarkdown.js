@@ -22,17 +22,18 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   
     const readmeLicense = renderLicenseSection(data.license);
-    return `
-        # ${data.title} \n\n
-        ## ${data.description} \n\n
-        ## Table of Contents \n\n 
-        ## Installation \n\n
-        ## Usage \n\n 
-        ## Credits \n\n
-        ## Tests \n\n 
-        ## Questions \n\n
-        ${readmeLicense}
-    `;
+
+    var readmeString = `# ${data.title} \n\n`;
+    readmeString += `## ${data.description} \n\n`; 
+    readmeString += `## Table of Contents \n\n`; 
+    readmeString += `## Installation \n\n`; 
+    readmeString += `## Usage \n\n`; 
+    readmeString += `## Credits \n\n`; 
+    readmeString += `## Tests \n\n`; 
+    readmeString += `## Questions \n\n`; 
+    readmeString += `${readmeLicense} \n\n`; 
+
+    return readmeString;
 }
 
 module.exports = { generateMarkdown };
