@@ -34,7 +34,32 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+
+    switch (license) {
+        case "CCO Attribution 4.0 Intl":
+            var licenseLink = '<https://creativecommons.org/licenses/by/4.0/legalcode>';
+            break;
+   
+        case "GNU GPLv2":
+            var licenseLink = '<https://choosealicense.com/licenses/gpl-2.0/>';
+            break;
+
+        case "GNU GPLv3":
+            var licenseLink = '<https://choosealicense.com/licenses/gpl-3.0/>';
+            break;
+         
+        case "MIT":
+            var licenseLink = '<https://choosealicense.com/licenses/mit/>';
+            break;
+            
+        default:
+            var licenseLink = '';
+            break;
+    }
+
+    return licenseLink;
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -79,11 +104,17 @@ function generateMarkdown(data) {
   
     const readmeLicense = renderLicenseSection(data.license);
     const readmeBadge = renderLicenseBadge(data.license);
+    const licenseLink = renderLicenseLink(data.license);
 
     var readmeString = `# ${data.title} ${readmeBadge} \n`;
     readmeString += `${data.description} \n \ \n`;
     readmeString += `## Table of Contents \n \ \n`; 
-    readmeString += '[Installation](#installation) \n[Usage](#usage) \n[Credits](#credits) \n[Tests](#tests) \n[Questions](#questions) \n [License](#license) \n  \ \n';
+    readmeString += '* [Installation](#installation) \n';
+    readmeString += '* [Usage](#usage) \n';
+    readmeString += '* [Credits](#credits) \n';
+    readmeString += '* [Tests](#tests) \n';
+    readmeString += '* [Questions](#questions) \n';
+    readmeString += '* [License](#license) \n  \ \n';
     readmeString += `## Installation \n \ \n`; 
     readmeString += `## Usage \n \ \n`; 
     readmeString += `## Credits \n \ \n`; 
@@ -91,6 +122,7 @@ function generateMarkdown(data) {
     readmeString += `## Questions \n \ \n`; 
     readmeString += `## License \n \ \n`;
     readmeString += `${readmeLicense}\n`; 
+    readmeString += `${licenseLink} \n`;
 
     return readmeString;
 }
