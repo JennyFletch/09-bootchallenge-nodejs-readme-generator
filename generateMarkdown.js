@@ -116,12 +116,19 @@ function generateMarkdown(data) {
     readmeString += '* [Questions](#questions) \n';
     readmeString += '* [License](#license) \n  \ \n';
     readmeString += `## Installation \n \ \n`; 
+    readmeString += `${data.installation} \n`;
     readmeString += `## Usage \n \ \n`; 
+    readmeString += `${data.usage} \n`;
+    readmeString += `![Alt text](./assets/images/${data.screenshot}?raw=true "${data.alttext}") \n`;
     readmeString += `## Credits \n \ \n`; 
+    readmeString += `${data.credits} \n`;
     readmeString += `## Tests \n \ \n`; 
+    readmeString += `${data.tests} \n`;
     readmeString += `## Questions \n \ \n`; 
+    readmeString += `For questions about this project, please contact me at <mailto:${data.email}>. `;
+    readmeString += `Or find me on GitHub at <https://github.com/${data.gituser}>. \n`;
     readmeString += `## License \n \ \n`;
-    readmeString += `${readmeLicense}\n`; 
+    readmeString += `${readmeLicense} \n`; 
     readmeString += `${licenseLink} \n`;
 
     return readmeString;
