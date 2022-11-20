@@ -1,5 +1,5 @@
 # README File Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package 
+A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. 
   
 ## Table of Contents 
   
@@ -12,11 +12,11 @@ A command-line application that dynamically generates a professional README.md f
    
 ## Installation 
   
-Inquirer v8.2.4 is required to run this application. 
+Inquirer v82.4 is required to run this application. 
 ## Usage 
   
 Run the index.js file on the command line, and answer the questions to generate a README file. 
-![Alt text](./assets/images/screenshot.png?raw=true "Screenshot of the README generator application") 
+![Alt text](./assets/images/screenshot.png?raw=true "Screenshot of the README Generator application") 
 ## Credits 
   
 Jennifer Fletcher 
