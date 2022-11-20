@@ -15,8 +15,9 @@ A command-line application that dynamically generates a professional README.md f
 Inquirer v82.4 is required to run this application. 
 ## Usage 
   
-Run the index.js file on the command line, and answer the questions to generate a README file. 
+Run the index.js file on the command line, and answer the questions to generate a README file.
 ![Alt text](./assets/images/screenshot.png?raw=true "Screenshot of the README Generator application") 
+Link to demo: https://drive.google.com/file/d/154LbDmb8ckd0xvzZ9xsh_r9gz0PsQWup/view 
 ## Credits 
   
 Jennifer Fletcher 
